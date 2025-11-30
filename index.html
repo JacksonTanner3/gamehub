@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- HEADER -->
+    <header>
+      <div class="logo">🎮 GameHub</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Favorites</a>
+      </nav>
+    </header>
+
+    <!-- HERO / SEARCH -->
+    <section class="hero">
+      <h1>Find Your Next Adventure</h1>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Search for games (e.g. Halo, Zelda)..." />
+        <button id="search-btn">Search</button>
+      </div>
+    </section>
+
+    <!-- RESULTS GRID -->
+    <main>
+      <h2 id="section-title">Trending Games</h2>
+      <div class="game-list" id="game-list">
+        <!-- Game Cards will be injected here by JS -->
+        <p class="loading">Loading games...</p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 GameHub | Powered by IGDB & YouTube</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

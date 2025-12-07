@@ -24,6 +24,18 @@
       <h1>Find Your Next Adventure</h1>
       <div class="search-box">
         <input type="text" id="search-input" placeholder="Search for games (e.g. Halo, Zelda)..." />
+        <select id="genre-select">
+          <option value="">All Genres</option>
+          <option value="31">Adventure</option>
+          <option value="12">RPG</option>
+          <option value="5">Shooter</option>
+          <option value="10">Racing</option>
+          <option value="14">Sport</option>
+          <option value="8">Platformer</option>
+          <option value="9">Puzzle</option>
+          <option value="15">Strategy</option>
+        </select>
+
         <button id="search-btn">Search</button>
       </div>
     </section>
@@ -32,7 +44,7 @@
     <main>
       <h2 id="section-title">Trending Games</h2>
       <div class="game-list" id="game-list">
-        <!-- Game Cards will be injected here by JS -->
+        <!-- Game Cards will be inputed here by JS -->
         <p class="loading">Loading games...</p>
       </div>
     </main>

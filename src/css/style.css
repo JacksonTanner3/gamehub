@@ -1,6 +1,5 @@
 :root {
     --primary: #3bd948;
-    /* Twitch Purple */
     --dark-bg: #121212;
     --card-bg: #1e1e1e;
     --text-main: #ffffff;
@@ -48,14 +47,24 @@ nav a {
     margin-top: 1rem;
 }
 
-input {
+input,
+select {
     padding: 0.8rem;
     border-radius: 5px;
     border: none;
-    width: 300px;
     font-size: 1rem;
     background-color: #2a2a2a;
     color: white;
+}
+
+input {
+    width: 300px;
+}
+
+select {
+    cursor: pointer;
+    border: 1px solid #333;
+    /* Slight border to make it pop */
 }
 
 button {
@@ -83,6 +92,30 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 1rem;
+}
+
+.game-card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.game-card img {
+    width: 100%;
+    /* Ensure image fits the card */
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.game-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
 }
 
 /* Temporary style for the "Loading" text */

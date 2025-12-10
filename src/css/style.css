@@ -29,7 +29,7 @@ header {
 }
 
 nav a {
-    color: var(--text-main);
+    color: var(--primary);
     text-decoration: none;
     margin-left: 1.5rem;
     font-weight: 500;
